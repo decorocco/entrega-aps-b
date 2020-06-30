@@ -79,7 +79,6 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
             switch1.turnOn();
             switch2.turnOn();
             switch3.turnOn();
-
         } else if (inputCheck.isSelected() && inputCheck2.isSelected()) {
             switch1.turnOn();
             switch2.turnOn();
