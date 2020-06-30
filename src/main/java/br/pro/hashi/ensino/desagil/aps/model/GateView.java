@@ -35,14 +35,14 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
 
         setSize(20, 20);
         if (gates.getInputSize() == 2) {
-            add(inputCheck, width/2 - 42, 40, 20, 20);
-            add(inputCheck2, width/2 + 20, 40, 20, 20);
+            add(inputCheck, width / 2 - 42, 40, 20, 20);
+            add(inputCheck2, width / 2 + 20, 40, 20, 20);
         } else if (gates.getInputSize() > 2) {
-            add(inputCheck, width/2 -70, 40, 20, 20);
-            add(inputCheck2, width/2 - 10, 40, 20, 20);
-            add(inputCheck3, width/2 + 50, 40, 20, 20);
+            add(inputCheck, width / 2 - 70, 40, 20, 20);
+            add(inputCheck2, width / 2 - 10, 40, 20, 20);
+            add(inputCheck3, width / 2 + 50, 40, 20, 20);
         } else {
-            add(inputCheck, width/2 - 10, 40, 20, 20);
+            add(inputCheck, width / 2 - 10, 40, 20, 20);
         }
 
         gates.connect(0, switch1);
@@ -121,7 +121,7 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
     public void mouseClicked(MouseEvent event) {
         int x = event.getX();
         int y = event.getY();
-        if (x >= height/2 - 30 && x <= height + 10 && y >= 130 && y <= 170 && Math.abs((x - width/2 - 10)) * Math.abs((x - width/2 - 10)) + Math.abs((y - 150)) * Math.abs((y - 150)) < 200) {
+        if (x >= height / 2 - 30 && x <= height + 10 && y >= 130 && y <= 170 && Math.abs((x - width / 2 - 10)) * Math.abs((x - width / 2 - 10)) + Math.abs((y - 150)) * Math.abs((y - 150)) < 200) {
             light.setColor(JColorChooser.showDialog(this, null, color));
         }
         update();
@@ -153,7 +153,7 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
         g.drawImage(image, (width / 2) - img_width / 2, (height / 2) - img_height / 2, img_width, img_height, this);
 
         g.setColor(color);
-        g.fillOval(width/2 - 10, 150, 20, 20);
+        g.fillOval(width / 2 - 10, 150, 20, 20);
 
         getToolkit().sync();
     }

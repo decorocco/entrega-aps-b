@@ -1,13 +1,13 @@
 package br.pro.hashi.ensino.desagil.aps.model;
 
-public class MuxGate extends Gate{
+public class MuxGate extends Gate {
     private final NandGate nand1;
     private final NandGate nand2;
     private final NandGate nand3;
     private final NandGate nand4;
 
     public MuxGate() {
-        super("MUX",3);
+        super("MUX", 3);
 
         nand1 = new NandGate();
         nand2 = new NandGate();
