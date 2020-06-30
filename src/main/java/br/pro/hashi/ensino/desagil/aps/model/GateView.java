@@ -79,18 +79,7 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
             switch1.turnOn();
             switch2.turnOn();
             switch3.turnOn();
-        } else if (inputCheck.isSelected()) {
-            switch1.turnOn();
-            switch2.turnOff();
-            switch3.turnOff();
-        } else if (inputCheck2.isSelected()) {
-            switch1.turnOff();
-            switch2.turnOn();
-            switch3.turnOff();
-        } else if (inputCheck3.isSelected()) {
-            switch1.turnOff();
-            switch2.turnOff();
-            switch3.turnOn();
+
         } else if (inputCheck.isSelected() && inputCheck2.isSelected()) {
             switch1.turnOn();
             switch2.turnOn();
@@ -102,6 +91,18 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
         } else if (inputCheck2.isSelected() && inputCheck3.isSelected()) {
             switch1.turnOff();
             switch2.turnOn();
+            switch3.turnOn();
+        } else if (inputCheck.isSelected()) {
+            switch1.turnOn();
+            switch2.turnOff();
+            switch3.turnOff();
+        } else if (inputCheck2.isSelected()) {
+            switch1.turnOff();
+            switch2.turnOn();
+            switch3.turnOff();
+        } else if (inputCheck3.isSelected()) {
+            switch1.turnOff();
+            switch2.turnOff();
             switch3.turnOn();
         } else {
             switch1.turnOff();
